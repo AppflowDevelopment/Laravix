@@ -18,8 +18,8 @@ restart the apache server
 
 ## Installation ##
 
-* `git clone https://github.com/AppflowDevelopment/Laravix.git projectname`
-* `cd projectname`
+* `git clone https://github.com/AppflowDevelopment/Laravix.git laravix`
+* `cd laravix`
 * `composer install`
 * create a database and edit your *.env* file (remove *.example*)
 * `php artisan migrate` to create tables
