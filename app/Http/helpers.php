@@ -6,9 +6,9 @@ function settings($param)
 
     if(is_null($settings))
     {
-        $settings = Cache::remember('lv_settings', 24*60, function() {
+        $settings = Cache::remember('settings', 24*60, function() {
             return array_pluck(
-				\DB::table('lv_settings')->get(), 'value', 'param'
+				\DB::table('settings')->get(), 'value', 'param'
 			);
         });
     }
