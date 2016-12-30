@@ -5,8 +5,8 @@
         <title>{{$title or 'Laravix - Laravel Skeleton'}}</title>
 		<meta name="description" content="Laravix is simple quick start Laravel 5 skeleton application">
 		<meta name="author" content="{{ settings('credits') }}">
-        <link href="{{ URL::asset('//code.rifix.net/bootstrap/3.3.6/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
-        <link href="{{ URL::asset('//code.rifix.net/fontawesome/4.6.3/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ URL::asset('//code.rifix.net/bootstrap/3.3.7/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ URL::asset('//code.rifix.net/fontawesome/4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ URL::asset('css/laravix.css') }}" rel="stylesheet" type="text/css">
 		
 		<script type="text/javascript" src="{{ URL::asset('//code.rifix.net/jquery/2.2.3/jquery.min.js') }}"></script>
@@ -57,7 +57,7 @@
 		@include('includes.subfooter')
 		
 		<div class="container centered">
-		&copy; {{ date('Y') . ' ' . settings('sitename') }}
+		<p>&copy; {{ date('Y') . ' ' . settings('sitename') }}. Core version: {{ App::VERSION() }}</p>
 		</div>
     </body>
 </html>
