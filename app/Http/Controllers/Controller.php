@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+	// AuthorizesRequests and AuthorizesResources have been merged
     //use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

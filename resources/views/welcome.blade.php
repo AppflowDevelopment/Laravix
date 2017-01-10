@@ -2,7 +2,7 @@
 <html>
     <head>
 		<meta charset="utf-8" />
-        <title>Laravix</title>
+        <title>{{ trans('messages.sitename') }}</title>
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <style>
             html, body {
@@ -33,7 +33,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravix</div>
+                <div class="title">{{ trans('messages.sitename') }}</div>
             </div>
         </div>
     </body>

@@ -11,6 +11,14 @@
 |
 */
 
+/*
+Route::get('/{locale}', function ($locale) {
+    App::setLocale($locale);
+
+    //
+});
+*/
+
 Route::get('/', function () {
     return view('includes.index');
 });
