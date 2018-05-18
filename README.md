@@ -5,14 +5,14 @@ Laravix is simple quick start Laravel 5 skeleton application
 
 Go to `C:\xampp\apache\conf\extra` and edit `httpd-vhosts.conf` file by adding
 
-`<VirtualHost laravix.dev:80>
+`<VirtualHost laravix.web:80>
 DocumentRoot "C:/xampp/htdocs/laravix"
 ServerName localhost
 </VirtualHost>`
 
 Go to `C:\Windows\System32\drivers\etc` and edit `hosts` file by adding
 
-`127.0.0.1 laravix.dev`
+`127.0.0.1 laravix.web`
 
 restart the apache server
 
@@ -25,7 +25,15 @@ restart the apache server
 * `php artisan migrate` to create tables
 * `php artisan db:seed` to populate tables
 
-Now go to [laravix.dev] (http://laravix.dev/)
+Now go to [laravix.web] (http://laravix.web/)
+
+## Update ##
+
+Modify "composer.json"
+* `composer update`
+
+## How to Create Symbolic Link with mklink ##
+* mklink /D "C:\xampp\htdocs\Laravix" "C:\Users\Administrator\Documents\GitHub\Laravix"
 
 ## Credits ##
 
