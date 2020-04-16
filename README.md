@@ -1,4 +1,4 @@
-# Laravix
+# Laravix 5 is DEPRECATED
 Laravix is simple quick start Laravel 5 skeleton application
 
 ## Create a virual host ##
